@@ -1,4 +1,6 @@
-
+---
+import Contact from '../components/Contact.astro'
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -97,14 +99,7 @@
         Check back soon for fresh designs, insights on web development, 
         and the latest projects I'm working on.
       </p>
-      <a href="mailto:adam.hardie13@gmail.com" class="cta">
-        Contact Me
-      </a>
-      <form name="contact" netlify>
-          <label>Name <input type="text" name="name" class="text-black"/></label>
-          <label>Email <input type="email" name="email"  class="text-black"/></label>
-          <button type="submit">Send</button>
-      </form>
+      <Contact></Contact>
       <footer>
         2025 <span class="highlight">Hardie Web Services</span> &copy; - All rights reserved
       </footer>
