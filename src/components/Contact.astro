@@ -19,8 +19,12 @@
   <form 
     name="contact" 
     netlify 
+    netlify-honeypot="bot-field"
     class="flex flex-col gap-4 justify-start mx-auto text-left"
   >
+    <label class="hidden">
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
     <label class="flex flex-col">
       <span class="mb-1 text-white">Name:</span>
       <input 
